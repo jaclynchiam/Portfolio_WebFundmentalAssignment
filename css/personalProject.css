@@ -1,0 +1,174 @@
+
+
+.header{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.main{
+  padding-top:0px;
+}
+
+/*import this for using iowa old style*/
+@font-face {
+  font-family: "Iowa Old Style";
+  src: url("fonts/IowaOldStyle.woff2") format("woff2"),
+       url("fonts/IowaOldStyle.woff") format("woff"),
+       url("fonts/IowaOldStyle.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title-box{
+    border:1px solid #FDEE00;
+    width:200px;
+    height:50px;
+    font-family: "Iowan Old Style", serif;
+    font-size:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*add visual effects for the title box*/
+.title-box {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.title-box::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background-color: #FDEE00;
+  animation: slideIn 2s infinite linear;
+}
+
+@keyframes slideIn {
+  to {
+    left: 100%;
+  }
+}
+
+
+.project-container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  gap:10px;
+  margin-top:60px;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; /* remove link underline */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+}
+
+.project-title{
+  text-align:center;
+} 
+
+.project {
+  border: 1px solid #FDEE00;  
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;  
+  cursor: pointer;
+}
+
+.project img {
+  width: 280px;
+  object-fit: cover; 
+}
+
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.project:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-content {
+  width: 300px;  
+  text-align: center;
+}
+
+.project-desc {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.5;
+  text-align: left;  
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);  
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* responsive media query */
+@media (max-width: 768px) {
+.project-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project {
+  width: 90%;
+  height: auto;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project-content {
+  width: 90%;
+  padding: 0 10px;
+}
+
+.grid-container {
+  grid-template-columns: 1fr;
+  padding: 10px;
+  gap: 15px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 16px;
+}
+}

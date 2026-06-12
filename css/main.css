@@ -1,0 +1,484 @@
+  
+  html, body {
+    margin: 0; 
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to right, #4615D7 20%, #250B71 77%);
+    color: white;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden; /*prevent unwanted overflow*/
+  }
+  
+  /* Apply proper box-sizing */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Ensure images don’t overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+   }
+
+  .gridbox {
+    display: grid;
+    grid-template-columns: 57px 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "left-nav top-nav"
+      "left-nav header"
+      "left-nav main"
+      "left-nav footer";
+    min-height: 100vh;
+    align-items:stretch;
+  }
+  
+
+  /*set the name for each grid area*/
+  main {
+    grid-area: main; /*set the name for each grid area*/
+    padding: 40px;
+    min-height:0;
+  }
+
+  header{
+    grid-area:header;
+    padding:20px; 
+  }
+  
+  .left-nav{
+    grid-area:left-nav;  
+    
+  }
+
+  .top-nav{
+    grid-area:top-nav; 
+  }
+
+  .footer {
+    grid-area: footer;  
+    padding: 10px;
+    background-color: #D9D9D9;
+    color: black;
+    height:auto;
+  }
+  
+  /*end of setting the name*/
+
+
+  /*style the top nav */
+  .top-nav {
+    background-color: #D9D9D9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    border-bottom: 1px solid #bfbfbf;  
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;  
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    min-height:40px; 
+  }
+
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 5px 0;
+  }
+  
+  .nav-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    padding: 5px 0;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .nav-left, .nav-right {
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .nav-left a,.nav-right a{
+    text-decoration:none;
+    color:#151414;
+    white-space:nowrap;
+    min-width:0;
+  }
+  
+
+  .navitem{
+    text-decoration:none;
+    color:#151414;
+
+    font-family:'Poppins',sans-serif;
+    font-weight:500;
+    font-size:15px;
+  }
+
+  .resume-content {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* spacing between image and text */
+    text-decoration:underline;
+  }
+  
+
+/*style the footer*/
+footer{
+  display:flex;
+  font-family:'Iowan Old Style',serif;
+  font-style:normal;
+  justify-content:space-between;
+}
+
+
+.footer-right{
+  display:flex;
+  flex-direction:row;
+  gap:40px;
+  padding-right:20px;
+}
+
+/*style the footer anchor tag*/
+.footer-right a{
+  text-decoration:none;
+  color:black;
+  font-family:'Iowan Old Style',serif;
+  font-style:normal;
+}
+
+/*hover for anchor tag*/
+.footer-left:hover{
+  font-weight:bold;
+}
+
+.footer-right a:hover{
+  color:blue;
+}
+
+.footer-right a:active{
+  text-decoration:underline;
+  color:black;
+}
+
+/*set hover effect for top navigation links */
+.nav-left a:hover{
+    color:blue;
+  }
+  
+  .nav-right a:hover{
+    color:blue;
+  }
+  
+  .nav-left a:active,
+  .nav-right a:active {
+    text-decoration: underline;
+    color:black;
+  }
+  
+
+/* style the tooltip and hover effects for top navigation links */
+.aboutme {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.4s ease, transform 0.4s ease;
+  display: inline-block; /* important for tooltip positioning */
+}
+
+.aboutme::after {
+  content: 'Learn more about me!';
+  position: absolute;
+  top: 100%;
+  left: 0; /* place it directly below the left edge */
+  background-color: #FDEE00;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.aboutme:hover {
+  color: #FDEE00;
+  transform: translateY(-2px) scale(1.05);
+}
+
+.aboutme:hover::after {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+
+/* tooltip styling for contact skills link */
+.nav-link-skills {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s ease, transform 0.4s ease;
+  display: inline-block;
+}
+
+.nav-link-skills::after {
+  content: 'Check out my technical skills!';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FDEE00;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.nav-link-skills:hover {
+  color: #FDEE00;
+  transform: translateY(-2px) scale(1.05);
+  font-weight:bold;  
+}
+
+.nav-link-skills:hover::after {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+/* tooltip styling for contact navigation link */
+.nav-link-contact {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s ease, transform 0.4s ease;
+  display: inline-block;
+}
+
+.nav-link-contact::after {
+  content: 'Feel free to get in touch!';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FDEE00;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.nav-link-contact:hover {
+  color: #FDEE00;
+  transform: translateY(-2px) scale(1.05);
+  font-weight: bold;
+}
+
+.nav-link-contact:hover::after {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+/* tooltip styling for projects navigation link */
+.nav-link-projects {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  /*font-weight: bold;*/
+  transition: color 0.4s ease, transform 0.4s ease;
+  display: inline-block;
+}
+
+.nav-link-projects::after {
+  content: 'Explore my hands-on coding projects!\A Check out what I’ve built so far!';
+  white-space: pre; /*set this to allow the line break after the \A tag */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FDEE00;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 12px;
+  z-index: 10;
+  width: max-content;
+}
+
+
+.nav-link-projects:hover {
+  color: #FDEE00;
+  transform: translateY(-2px) scale(1.05);
+  font-weight:bold;  
+
+}
+
+.nav-link-projects:hover::after {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+
+/* tooltip styling for projects navigation link */
+.resume {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s ease, transform 0.4s ease;
+  display: inline-block;
+}
+
+.resume::after {
+  content: 'Download my resume!';
+  position: absolute;
+  top: 100%;
+  right: 0;  
+  background-color: #FDEE00;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 12px;
+  z-index: 9999;
+}
+
+.resume:hover {
+  color: #FDEE00;
+  transform: translateY(-2px) scale(1.05);
+  font-weight:bold; /*when user hover to it then only bold it's better*/
+}
+
+.resume:hover::after {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+.resumu::after {
+  content: 'Download my resume!';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FDEE00;
+  color: black;
+  padding: 5px 15px;
+  padding-right:20px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 12px;
+  z-index: 9999;
+}
+
+
+
+/*set responsive media query*/
+@media (max-width: 700px) {
+  footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+  }
+    
+.footer-left,
+.footer-right {
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+    
+.footer-right {
+  margin-top: 10px;
+  }
+}
+
+/* Tablet view and below */
+@media (max-width: 768px) {
+  .top-nav {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+
+  .nav-right {
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .nav-right a {
+    min-width: 100px;
+    text-align: center;
+  }
+}
+
+/* Mobile view - mid range */
+@media (max-width: 500px) {
+  .top-nav {
+    padding: 10px 10px;
+  }
+
+  .nav-right {
+    gap: 10px;
+  }
+
+  .nav-right a {
+    min-width: 80px;
+  }
+}
+
+/* Very small screen like 300px */
+@media (max-width: 350px) {
+  .top-nav {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 5px;
+  }
+
+  .nav-left, .nav-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-right a {
+    width: 100%;
+    text-align: center;
+    min-width: unset;
+  }
+}
+

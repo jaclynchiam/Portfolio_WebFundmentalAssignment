@@ -1,0 +1,481 @@
+*{
+    box-sizing:border-box;
+  }
+  
+  .header{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px;
+    padding-bottom:5px;
+  }
+  
+  .title-box{
+    border:1px solid #FDEE00;
+    width:200px;
+    height:50px;
+    font-family: "Iowan Old Style", serif;
+    font-size:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /*add visual effects for the title box*/
+  .title-box {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .title-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background-color: #FDEE00;
+    animation: slideIn 2s infinite linear;
+  }
+  
+  @keyframes slideIn {
+    to {
+      left: 100%;
+    }
+  }
+
+  
+  .main-content{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding-top:5px;
+  
+  }
+  
+  .intro{
+    display:flex;
+    flex-direction:row;
+    justify-content:start;
+    align-items:center;
+    gap:0px;
+  }
+  
+  .intro-right{
+    margin-left:10px;
+  }
+  
+  .project-box {
+    width: 250px;
+    height: 450px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    flex-shrink: 0;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    gap:0px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-box img {
+    max-width: 100%;      
+    max-height: 100%;     
+    width: 220px;          
+    height: auto;
+    display: block;       
+    margin: 0 auto;       
+    object-fit: contain;  
+  }
+  
+  .design-caption {
+    font-size: 14px;
+    text-align: center;
+    margin-top:0px;
+    color:black;
+    padding-top:5px;
+  }
+  
+  
+  .project-intro {
+    flex: 1;
+    min-width: 300px;
+    padding: 15px;
+    margin-left:35px;
+  
+  }
+  
+  .project-intro h3{
+    font-size:30px;
+    margin-top:0px;
+  }
+  
+  .project-intro ul {
+    padding-left: 20px;
+    margin-left:15px;
+    list-style-type: disc;
+  }
+  
+  .project-intro ul li {
+    font-size: 16px;         
+    line-height: 1.6;       
+    color:white;              
+    margin-bottom: 8px;      
+    font-family: 'Inter', sans-serif;   
+  }
+  
+  .title{
+    margin-left:20px;
+  }
+  
+  .skills-used{
+    margin-left:35px;
+  }
+  
+  
+  /*style section 2 project description  */
+  .project-description{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+  }
+  
+    /*style the font*/
+    .project-description h3 {
+      margin-bottom: 10px;
+      font-size: 34px;
+      color: #FDEE00;
+      margin-left:15px;
+      margin-bottom:0px
+    }
+    
+    .project-description p {
+      font-size: 16px;
+      line-height: 1.8;        
+      color: white;             
+      padding: 10px 15px;       
+      font-family: 'Inter', sans-serif;
+    }
+  
+    .project-showcase h3{
+      font-size:30px;
+    }
+  
+    .showcase-wrapper{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  
+  /*style section 3 showcase container*/
+  .showcase-container{
+    background-color:#D9D9D9;
+    border-radius:50px;
+    width:800px;
+    width:1100px;
+    height:600px;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+  }
+  
+
+  .showcase-box{
+      display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        gap:30px;
+        padding:10px;
+  }
+  
+  
+  .project-showcase h3{
+    text-align: center;
+    color:#FDEE00;
+  }
+
+
+  .royalscreen-uiux{
+    width:200px;
+    height:400px;
+    display:block;
+    object-fit:contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    }
+  
+    
+  .royalscreen-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  
+  figure,
+  figcaption {
+  margin: 0;
+  padding: 0;
+  }
+  
+  .royalscreen-design figcaption {
+  margin-top: 4px;  
+  font-size: 14px;
+  font-family: "Iowan Old Style", "Times New Roman", serif;
+  color: black;
+  }
+  
+
+.view-more {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+   }
+   
+   .view-more-button {
+     border: 2px solid black;
+     height: 60px;
+     width: 200px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .view-more-button a {
+     text-decoration: none;
+     text-align:center;
+     color: black;
+     font-weight: bold; 
+     font-family: sans-serif;  
+   }
+   
+   .view-report-button{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:20px;
+    }
+   
+   .pdf-button {
+     display: inline-block;
+     padding: 10px 20px;
+     border:2px solid white;
+     color: white;
+     text-decoration: none;
+     font-weight: 500;
+   }
+   
+  
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /*add fade in effects*/
+  .project-box {
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .royalscreen-uiux,.login-page {
+    cursor: zoom-in;
+  }
+  
+  
+  /*add hover effects*/  
+  .project-box:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .royalscreen-uiux:hover {
+    transform: scale(1.05);  
+  }
+  
+  .login-page:hover {
+    transform: scale(1.05);  
+  }
+  
+  /*add hover and click effects for button */
+  .view-more-button,
+  .pdf-button {
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .view-more-button:hover,
+  .pdf-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+  }
+  
+  .view-more-button:active,
+  .pdf-button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: scale(0.98);
+  }
+
+
+  /*add media query*/
+  /* Extra small phones (max-width: 480px) */
+  @media (max-width: 480px) {
+    .title-box {
+      width: fit-content;
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+    }
+  
+    .project-intro ul li {
+      font-size: 13px;
+    }
+  
+    .design-caption,
+    figcaption {
+      font-size: 12px;
+    }
+  
+    .view-more-button,
+    .pdf-button {
+      width: 100%;
+      font-size: 14px;
+      padding: 8px 16px;
+      text-align: center;
+    }
+  
+    .product-description,
+    .product-showcase {
+      font-size: 14px;
+    }
+  
+    .product-description img,
+    .product-showcase img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  
+  
+  /* Small phones and small tablets (max-width: 600px) */
+  @media (max-width: 600px) {
+    .product-description,
+    .product-showcase {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .product-description img,
+    .product-showcase img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  
+  /* Tablets and mobile (max-width: 768px) */
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 10px;
+    }
+  
+    .project-box,
+    .project-intro,
+    .royalscreen-design {
+      width: 100%;
+    }
+  
+    .project-intro h3,
+    .project-showcase h3,
+    .project-description h3 {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    .project-description p {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .royalscreen-uiux {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+  /* Tablets and small laptops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .intro {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .project-box,
+    .project-intro {
+      width: 90%;
+      height: auto;
+    }
+  
+    .showcase-container {
+      width: 95%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .showcase-box {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .royalscreen-design {
+        width: 100%;
+        max-width: 250px;
+      }
+    
+      .royalscreen-uiux {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+  
+    .project-description p {
+      font-size: 15px;
+    }
+  }
+  

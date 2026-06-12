@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang  ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jaclyn Personal Portfolio - Personal Projects </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--import google font style-->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+
+        <!--external css file-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/leftnav.css">
+        <link rel="stylesheet" href="css/personalProject.css">
+    </head>
+
+    <body>
+
+        <div class="gridbox"> 
+            <!--first grid child - top nav-->
+            <nav class="top-nav">
+                <div class="nav-left"> 
+                    <a href="aboutme.html" class="aboutme" >About Me</a>
+                </div>
+
+                <div class="nav-right">
+                    <a href="skills.html" class="navitem nav-link-skills">Skills</a>
+                    <a href="personalProject.html" class="navitem nav-link-projects">Personal Projects</a>
+                    <a href="contact.html" class="navitem nav-link-contact">Contact</a>
+                    <a href="files/top_nav/Resume.pdf" target="_blank" class="navitem resume">
+                        <span class="resume-content">
+                          <img src="images/top_nav/resume.png" width="25" height="25" alt="Resume icon">
+                          Resume
+                        </span>
+                      </a>                         
+                </div>
+            </nav>
+            
+            <!--second grid child left - nav -->
+            <nav class="left-nav">
+                <button class="logo-button" onclick="location.href='homepage.html'">J</button>
+                <a class="ig-icon" href="https://www.instagram.com/chiamjaclyn/" target="_blank"><img src="images/left_nav/instagram.png" alt="instagram icon" width="35" height="35"></a>
+                <a class="linkedin" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><img src="images/left_nav/linkedin.png" alt="linkedin" width="35" height="35"></a>
+                <a class="whatsapp" href="https://web.whatsapp.com/" target="_blank"><img src="images/left_nav/whatsapp.png" alt="whatsapp" width="35" height="35"></a>
+                <a class="facebook" href="https://www.facebook.com/jiezu.chiam/" target="_blank"><img src="images/left_nav/facebook.png" alt="facebook" width="35" height="35"></a>
+                <a class="github" href="https://github.com/jaclynchiam" target="_blank"><img src="images/left_nav/github.png" alt="github" width="35" height="35"></a>
+                <a class="leetcode" href="https://leetcode.com/u/jaclynchiam/" target="_blank"><img src="images/left_nav/leetcode.png" alt="leetcode" width="35" height="35"></a>
+            </nav>
+            
+
+    
+            <!--header-->
+            <header class="header"> 
+                <div class="title-box">
+                    <p> Personal Projects </p>
+                </div>
+            </header>
+
+            <!--thrid grid child - main content area-->
+            <main class="main">
+               
+                <h2 class="title fade-in">🚀 Explore What I've Built</h2>
+                <p class="fade-in">I’m currently a first-year Computer Science student at Sunway University. Throughout the year, I’ve built several personal and academic projects to strengthen my coding skills and apply what I’ve learned. Here’s a collection of my personal and academic projects, each one showcases what I’ve learned and how I apply those skills into my projects.  Feel free to click on any of the projects below to view more details.</p>
+
+                <div class="project-container">
+                    <div class="project-content fade-in" style="animation-delay: 0s;">
+                        <div class="project-box"> 
+                            <div class="project" onclick="goToPage('personalProject1-MovieBookingApp.html')">
+                                <img src="images/homepage/MovieBookingApp-Home.png" alt="Movie Booking Application">
+                            </div>
+                            <p class="project-title">Movie Booking Application</p>
+                            <p class="project-desc">
+                                It is a Java-based mobile application that allows users to browse movies, select showtimes, choose seats, and make bookings.<br>
+                                <strong>Tech used:</strong>Javascript (functionality), Canva (UI/UX) design <br>
+                                <strong>What I did:</strong> Built the full GUI interface, managed seat selection logic, and implemented basic booking functionalities.
+                              </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content fade-in" style="animation-delay: 0.1s;">
+                        <div class="project-box">
+                            <div class="project" onclick="goToPage('personalProject2-InventoryManagementSystem.html')">
+                                <img src="images/homepage/InventorySystem-Home.png" alt="Inventory Management System">
+                            </div>
+                            <p class="project-title">Inventory Management System</p>
+                            <p class="project-desc">
+                                A terminal-based inventory system for tracking product stock, managing suppliers, and placing restock orders.
+                                 <strong>Tech used:</strong>Python, File I/O<br>
+                              </p>
+                        </div>
+                    </div>
+                
+
+                    <div class="project-content fade-in" style="animation-delay: 0.2s;">
+                        <div class="project-box">
+                          <div class="project" onclick="goToPage('personalProject3.html')">
+                            <img src="images/homepage/JavaGUI_MiniProject.png" alt="Java GUI Mini Project">
+                          </div>
+                          <p class="project-title">Java GUI Mini Projects</p>
+                          <div class="project-desc">
+                            <p>
+                              A collection of Java-based GUI applications built using JOptionPane during my Foundation studies. These programs handle user input, perform real-time calculations, and present results through interactive pop-up dialogs.
+                            </p>
+                            <p><strong>Project Includes:</strong></p>
+                            <ul>
+                              <li>☕ Coffee Shop Ordering System</li>
+                              <li>🏊‍♀️ Swimming Competition Ranking System</li>
+                            </ul>
+                            <p><strong>Tech used:</strong> Java, Java Swing (GUI)</p>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+                  
+            </main>
+            
+             <!--last and fourth grid child, footer-->
+             <footer class="footer"> 
+
+                <div class="footer-left">
+                    <small>&copy; 2025 Jaclyn Chiam Personal Portfolio</small>
+                </div>
+
+                <div class="footer-right">
+                    <a href="aboutme.html" class="footer-item"><small>about</small></a>
+                    <a href="personalProject.html" class="footer-item"><small>projects</small> </a>
+                    <a href="contact.html" class="footer-item"> <small>contact</small></a>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            function goToPage(url) {
+            window.location.href = url;
+          }
+          
+        </script>
+
+        <!--link to external js file-->
+        <script src="javascript/fadein.js"></script>
+    </body>
+
+</html>

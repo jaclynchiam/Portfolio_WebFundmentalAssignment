@@ -1,0 +1,206 @@
+
+
+<!DOCTYPE html>
+<html lang  ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jaclyn Personal Portfolio - Personal Project 3 - Java GUI Mini Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--import google font style-->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+           
+        <!--external css file-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/leftnav.css">
+        <link rel="stylesheet" href="css/personalProject3.css">
+    </head>
+
+    <body>
+        <div class="gridbox"> 
+            <!--first grid child - top nav-->
+            <nav class="top-nav">
+                <div class="nav-left"> 
+                    <a href="aboutme.html" class="aboutme" >About Me</a>
+                </div>
+
+                <div class="nav-right">
+                    <a href="skills.html" class="navitem nav-link-skills">Skills</a>
+                    <a href="personalProject.html" class="navitem nav-link-projects">Personal Projects</a>
+                    <a href="contact.html" class="navitem nav-link-contact">Contact</a>
+                    <a href="files/top_nav/Resume.pdf" target="_blank" class="navitem resume">
+                        <span class="resume-content">
+                          <img src="images/top_nav/resume.png" width="25" height="25" alt="Resume icon">
+                          Resume
+                        </span>
+                      </a>                         
+                </div>
+            </nav>
+            
+            <!--second grid child left - nav -->
+            <nav class="left-nav">
+                <button class="logo-button" onclick="location.href='homepage.html'">J</button>
+                <a class="ig-icon" href="https://www.instagram.com/chiamjaclyn/" target="_blank"><img src="images/left_nav/instagram.png" alt="instagram icon" width="35" height="35"></a>
+                <a class="linkedin" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><img src="images/left_nav/linkedin.png" alt="linkedin" width="35" height="35"></a>
+                <a class="whatsapp" href="https://web.whatsapp.com/" target="_blank"><img src="images/left_nav/whatsapp.png" alt="whatsapp" width="35" height="35"></a>
+                <a class="facebook" href="https://www.facebook.com/jiezu.chiam/" target="_blank"><img src="images/left_nav/facebook.png" alt="facebook" width="35" height="35"></a>
+                <a class="github" href="https://github.com/jaclynchiam" target="_blank"><img src="images/left_nav/github.png" alt="github" width="35" height="35"></a>
+                <a class="leetcode" href="https://leetcode.com/u/jaclynchiam/" target="_blank"><img src="images/left_nav/leetcode.png" alt="leetcode" width="35" height="35"></a>
+            </nav>
+            
+
+            <!--header-->
+            <header class="header"> 
+                <div class="title-box">
+                    <p> Personal Projects </p>
+                </div>
+            </header>
+
+            <!--thrid grid child - main content area-->
+            <main class="main">
+                <section class="intro fade-in">
+                    <h1 class="project-title">Java GUI Mini Projects: Coffee Shop Ordering System and Swimming Competition Timer </h1>
+                    <p>These projects were developed in August 2023 as part of individual assignments during my Foundation in Arts. Both are Java GUI programs using JOptionPane, designed to handle user input, perform calculations, and display results interactively.</p>
+                </section>
+               
+
+
+               <section class="coffee-shop-project fade-in"> 
+
+                <div class="project-box fade-in">
+                    <h1 class="project-title"> ☕ Coffee Shop Ordering System (Java GUI) </h1>
+
+                    <div class="description">
+                        <p><strong>Project Description</strong></p>
+                        <p>This is a Java-based GUI application that simulates a coffee shop ordering system. Customers can select from a list of beverages and optional extra items, and the program will calculate and display the total cost. The interface was built using JOptionPane for a simple and interactive user experience.</p>    
+                    </div>
+                   
+                    <div class="features">
+                        <div class="feature-desc">
+                            <p><strong>Features</strong><br> Choose from 3 beverages: </p>
+                            <ul>
+                                <li>Regular Coffee - RM5.50</li>
+                                <li>Cappuccino - RM7.49</li>
+                                <li>Latte - RM8.00</li>
+                            </ul>
+
+                            <p>Add-ons available</p>
+                            <ul>
+                                <li>Whipped Cream - RM1.25</li>
+                                <li>Chocolate Syrup - RM2.00</li>
+                                <li>Final total cost displayed via dialog box</li>
+                            </ul>
+                        </div>
+
+                        <div class="feature-image">
+                            <img src="images/PersonalProject3/CoffeeShopMenu.png" alt="Coffee Shop Menu" width="250">
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <p>Language Used: </p>
+                        <ul>
+                            <li>Java</li>
+                            <li>Swing (JOptionPane dialogs) </li>
+                        </ul>
+                    </div>
+
+                    <div class="result-image">
+                        <img src="images/PersonalProject3/OrderSummary.png" alt="Order Summary">
+                    </div>
+
+                </div>
+               </section>
+
+               <section class="swimming-project fade-in">
+                <div class="project-container fade-in">
+                        <h1 class="project-title"> 🏊‍♀️ Swimming Competition Ranking System (Java GUI) </h1>
+              
+
+                    <div class="project-description">
+                        <p><strong>Project Description </strong></p>
+                        <p>This is a Java-based GUI application designed for a local swimming competition. It uses JOptionPane dialogs to take input for the names and completion times (in seconds) of three swimmers participating in a 100-meter freestyle event. After collecting the data, the program compares the times and displays the swimmers' rankings from fastest to slowest in a pop-up message box.</p>
+                    </div>
+
+                    <div class="project-feature">
+                        <div class="feature-text">
+                            <p>Features</p>
+                        <ul>
+                            <li>Input swimmer names and completion times using dialog box</li>
+                            <li>Automatically compare and rank swimmers based on their race time</li>
+                            <li>Display results in order from faster to slowest</li>
+                            <li>User-friendly interface using Java's JOptionPane Dialogs</li>
+                        </ul>
+                        </div>
+                    
+
+                        <div class="swimmer-feature-image">
+                            <img src="images/PersonalProject3/swimmerfeature.png" alt="Swimmer Features">
+                        </div>  
+                    </div>
+
+                    <div class="language">
+                        <p>Language Used: </p>
+                        <ul>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+
+                    <div class="input-example">
+                        <p>Example for entering swimmer name and completion time: </p>
+                        <div class="input-image">
+                            <img src="images/PersonalProject3/swimmer-name.png" alt="Swimmer Name">
+                            <img src="images/PersonalProject3/completion-time.png" alt="Completion Time">
+                        </div>
+                    </div>
+
+
+                    <div class="error-example">
+                        <p>This program will also display an error if the user enters an invalid completion time:</p>
+                        <div class="error-image">
+                            <img src="images/PersonalProject3/error-1.png" alt="Swimmer Name">
+                            <img src="images/PersonalProject3/error-2.png" alt="Completion Time">
+                        </div>
+                    </div>
+
+                    <div class="swimming-result">
+                        <p>Display the results of swimmers after comparing their completion times: </p>
+                        <div class="swimming-result-image">
+                            <img src="images/PersonalProject3/swimming-results.png" alt="Swimming Results">
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="view-code-demo-button">
+                    <a href="files/PersonalProject3/PersonalProject3.pdf" target="_blank" class="pdf-button">
+                        View Code & Demo (PDF)
+                      </a>
+                </div>
+
+
+
+               </section>
+                  
+            </main>
+            
+           <!--last and fourth grid child, footer-->
+           <footer class="footer"> 
+
+            <div class="footer-left">
+                <small>&copy; 2025 Jaclyn Chiam Personal Portfolio</small>
+            </div>
+
+            <div class="footer-right">
+                <a href="aboutme.html" class="footer-item"><small>about</small></a>
+                <a href="personalProject.html" class="footer-item"><small>projects</small> </a>
+                <a href="contact.html" class="footer-item"> <small>contact</small></a>
+            </div>
+        </footer>
+        </div>
+        <!--link to external js file-->
+        <script src="javascript/personalProject3.js"></script>
+    </body>
+
+</html>

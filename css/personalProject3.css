@@ -1,0 +1,282 @@
+
+
+.header{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.main{
+  padding-top:0px;
+}
+
+.title-box{
+    border:1px solid #FDEE00;
+    width:200px;
+    height:50px;
+    font-family: "Iowan Old Style", serif;
+    font-size:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /*add visual effects for the title box*/
+.title-box {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.title-box::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background-color: #FDEE00;
+  animation: slideIn 2s infinite linear;
+}
+
+@keyframes slideIn {
+  to {
+    left: 100%;
+  }
+}
+
+
+.project-name{
+  color:#FDEE00;
+}
+
+
+
+h1, h2, .title-box {
+  font-family: "Iowan Old Style", serif;
+}
+
+p, span, body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1.project-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FDEE00;
+}
+
+.coffee-shop-project{
+  padding-top:10px;
+}
+
+
+.project-box{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+
+
+.features{
+  display:flex;
+  flex-direction:row;
+  gap:20px;
+}
+
+.feature-image{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.feature-image img{
+max-width: 100%;
+height: auto;
+width: 250px;  
+object-fit: contain;
+border-radius: 8px;  
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  
+}
+
+.result-image img{
+display:flex;
+justify-content:center;
+width:500px;
+object-fit: contain;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result-image {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.result-image img {
+width: 500px;
+object-fit: contain;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.project-title{
+color:#FDEE00;
+}
+
+
+
+.project-container{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.project-feature{
+display:flex;
+flex-direction:row;
+gap:10px;
+}
+
+.feature-text{
+flex:1;
+}
+
+.swimmer-feature-image{
+flex:1;
+display:flex;
+justify-content:flex-start;
+}
+
+.input-example{
+display:flex;
+flex-direction:column;
+gap:5px;
+}
+
+.input-image{
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
+}
+
+
+.error-example{
+display:flex;
+flex-direction:column;
+}
+
+.error-image{
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
+}
+
+
+.swimming-result{
+display:flex;
+flex-direction:column;
+}
+
+.swimming-result-image{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+.swimmer-feature-image img{
+  width: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.input-image img{
+width: 400px;
+object-fit: contain;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.error-image img{
+  width: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  
+}
+
+.swimming-result-image img{
+width: 500px;
+object-fit: contain;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  
+}
+
+.error-image {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap: 50px;  
+flex-wrap: wrap; 
+}
+
+.input-image {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap: 50px;  
+flex-wrap: wrap;  
+}
+
+
+
+.pdf-button {
+display: inline-block;
+padding: 10px 20px;
+color: white;
+font-weight: bold;
+border:1px solid #FDEE00;
+text-decoration: none;
+border-radius: 6px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+transition: background-color 0.3s ease, transform 0.2s ease;
+font-family: 'Inter', sans-serif;
+}
+
+.pdf-button:hover {
+transform: scale(1.05);
+}
+
+.view-code-demo-button {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;  
+}
+
+img {
+transition: transform 0.3s ease;
+}
+
+img:hover {
+transform: scale(1.02);
+}
+
+.fade-in {
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+will-change: opacity, transform;
+}
+
+.fade-in.visible {
+opacity: 1;
+transform: translateY(0);
+}

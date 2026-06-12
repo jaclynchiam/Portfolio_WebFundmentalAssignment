@@ -1,0 +1,196 @@
+
+.header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  
+  .title-box{
+      border:1px solid #FDEE00;
+      width:200px;
+      height:50px;
+      font-family: "Iowan Old Style", serif;
+      font-size:20px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    /*add visual effects for the title box*/
+  .title-box {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .title-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background-color: #FDEE00;
+    animation: slideIn 2s infinite linear;
+  }
+  
+  @keyframes slideIn {
+    to {
+      left: 100%;
+    }
+  }
+  
+  
+  
+  .main{
+    padding-top:10px;
+  }
+  
+  
+  .technical-skills{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    gap:30px;
+  }
+  
+  .skill-text{
+    display:flex;
+  }
+  
+  .skill-icon{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .subtitle{
+    color:#FDEE00;
+  }
+  
+  .programming-skills-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+  
+  }
+  .skill-summary-box{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+  }
+  
+  
+  .soft-skill-list li {
+    margin-bottom: 0.75em;
+    line-height: 1.5;
+  }
+  .soft-skill-list li strong {
+    color: #FDEE00;
+  }
+  
+ .content-box{
+    margin-left:30px;
+ }
+
+ .skill-subtitle{
+    color:#FDEE00;
+    font-weight:bold;
+ }
+
+  /*text section*/
+  .technical-skills .skill-text {
+    margin-bottom: 15px;
+  }
+  
+  .projects ul {
+    margin-bottom: 25px;
+  }
+  
+  .technical-skills p,
+  .projects ul li {
+    line-height: 1.6;  
+  }
+  
+  .programming-skills ul li {
+    line-height: 1.4;  
+  }
+  
+  body {
+    line-height: 1.6;  
+  }
+  
+  .experience{
+    margin-top:0px;
+  }
+  
+  .programming-skills h4{
+    margin-bottom:0px;
+    color:#FDEE00;
+  }
+
+  /*add fade in effects*/
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+ @media (max-width: 768px) {
+  .technical-skills {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-left: 20px;
+  }
+
+  .skill-summary-box,
+  .programming-skills-container {
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .skill-text {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .title-box {
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .programming-skills .skill-box,
+  .soft-skills .skill-box,
+  .projects,
+  .skill-summary {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .soft-skill-list {
+    padding-left: 20px;
+  }
+
+  .programming-skills h4,
+  .experience {
+    margin-left: 5px;
+  }
+}
+
+ 
+
+
+  

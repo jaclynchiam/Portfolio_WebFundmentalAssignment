@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang  ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jaclyn Personal Portfolio - Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--import google font style-->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+
+
+        <!--external css file-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/leftnav.css">
+        <link rel="stylesheet" href="css/homepage.css">
+    </head>
+
+    <body>
+        <div class="gridbox"> 
+            <!--first grid child - top nav-->
+            <nav class="top-nav">
+                <div class="nav-left"> 
+                    <a href="aboutme.html" class="aboutme" >About Me</a>
+                </div>
+
+                <div class="nav-right">
+                    <a href="skills.html" class="navitem nav-link-skills">Skills</a>
+                    <a href="personalProject.html" class="navitem nav-link-projects">Personal Projects</a>
+                    <a href="contact.html" class="navitem nav-link-contact">Contact</a>
+                    <a href="files/top_nav/Resume.pdf" target="_blank" class="navitem resume">
+                        <span class="resume-content">
+                          <img src="images/top_nav/resume.png" width="25" height="25" alt="Resume icon">
+                          Resume
+                        </span>
+                      </a>                         
+                </div>
+            </nav>
+            
+            <!--second grid child left - nav -->
+            <nav class="left-nav">
+                <button class="logo-button" onclick="location.href='homepage.html'">J</button>
+                <a class="ig-icon" href="https://www.instagram.com/chiamjaclyn/" target="_blank"><img src="images/left_nav/instagram.png" alt="instagram icon" width="35" height="35"></a>
+                <a class="linkedin" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><img src="images/left_nav/linkedin.png" alt="linkedin" width="35" height="35"></a>
+                <a class="whatsapp" href="https://web.whatsapp.com/" target="_blank"><img src="images/left_nav/whatsapp.png" alt="whatsapp" width="35" height="35"></a>
+                <a class="facebook" href="https://www.facebook.com/jiezu.chiam/" target="_blank"><img src="images/left_nav/facebook.png" alt="facebook" width="35" height="35"></a>
+                <a class="github" href="https://github.com/jaclynchiam" target="_blank"><img src="images/left_nav/github.png" alt="github" width="35" height="35"></a>
+                <a class="leetcode" href="https://leetcode.com/u/jaclynchiam/" target="_blank"><img src="images/left_nav/leetcode.png" alt="leetcode" width="35" height="35"></a>
+            </nav>
+            
+            
+
+            <!--header-->
+            <header class="main-header"> 
+                <h1 class="title">Jaclyn Chiam Jie Zu</h1>
+            </header>
+
+            <!--thrid grid child - main content area-->
+            <main>
+                <section class="intro fade-in"> 
+                    <div class="intro-top">
+                        <div class="intro-left">
+                            <h3>Hi, I'm Jaclyn 👋 <br>First Year Computer Science student at Sunway University
+                                <br>A Passionate Software Engineer who loves coding and enjoy solving problems through my thinking! </h3> 
+                                <p class="intro-description">  I’m a first-year Computer Science student at Sunway University with a deep passion for technology and software development. I aspire to become a software engineer and am currently growing my skills through projects, self-learning, and academic studies.</p>                                <p class="intro-description">On this portfolio, you'll find: </p>
+                                <ul class="intro-description intro-list">
+                                    <li>Projects I've worked on</li>
+                                    <li>Skills I'm developing</li>
+                                    <li>My learning journey in tech</li>
+                                </ul>
+                            <p class="intro-description">I'm always excited to explore new programming tools, solve prblems through code, and collaborate with others in tech-related fields.</p>
+                            <p class="intro-description">Feel free to explore, and thanks for visiting!</p>
+                        </div>
+
+                        <div class="profile">
+                            <div class="profile-pic">
+                                <img src="images/homepage/profile.png" alt="profilepicture" width="200" >
+                            </div>
+                            <div class="skills profileskills">
+                                <span class="skills-label"> Skills: </span>
+                                <div class="skills-grid"> 
+                                    <img src="images/skills/javascript.png" alt="JavaScript">
+                                    <img src="images/skills/java.png" alt="Java">
+                                    <img src="images/skills/python.png" alt="Python">
+                                    <img src="images/skills/sql.png" alt="SQL">
+                                    <img src="images/skills/html.png" alt="HTML">
+                                    <img src="images/skills/figma.png" alt="Figma">
+                                    <img src="images/skills/css.png" alt="CSS"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="intro-bottom">
+                        <!--flex item row 1-->
+                        <div class="contact-me">
+                            <button id="contactme-button" onclick="window.location.href='contactme.html'">Contact Me</button>
+                        </div>
+                    </div>
+                </section>    
+
+                <section class="personal-skills fade-in">
+                    <hr>
+                    <h2>My Coding Skills</h2> 
+
+                    <div class="skills-container">
+                      <div class="skill" data-percentage="60" data-label="HTML"></div>
+                      <div class="skill" data-percentage="65" data-label="CSS"></div>
+                      <div class="skill" data-percentage="40" data-label="JavaScript"></div>
+                      <div class="skill" data-percentage="80" data-label="Python"></div>
+                      <div class="skill" data-percentage="65" data-label="Java"></div>
+                    </div>   
+                                         
+                </section>
+        
+                <!--personal projects sections part-->    
+                <section class="personal-projects fade-in">
+                    <h2 class="section-title">Personal Projects</h2>
+                    <div class="project-container">
+                        <div class="project-box"> 
+                            <div class="project" onclick="goToPage('personalProject1-MovieBookingApp.html')">
+                                <img src="images/homepage/MovieBookingApp-Home.png" alt="Movie Booking Application">
+                            </div>
+                            <p class="project-title">Movie Booking Application</p>
+                        </div>
+                        
+                        <div class="project-box">
+                            <div class="project" onclick="goToPage('personalProject2-InventoryManagementSystem.html')">
+                                <img src="images/homepage/InventorySystem-Home.png" alt="Inventory Management System">
+                            </div>
+                            <p class="project-title">Inventory Management System</p>
+                        </div>
+
+
+                        <div class="project-box">
+                            <div class="project" onclick="goToPage('personalProject3.html')">
+                                <img src="images/homepage/JavaGUI_MiniProject.png" alt="Java GUI Mini Project">
+                            </div>
+                            <p class="project-title">Java GUI Mini Projects</p>
+                        </div>
+                    </div>
+                  </section>
+
+
+                  <!--career inspiration part -->
+                <section class="career fade-in">
+                    <h2 class="section-title">Career Inspiration</h2>
+                    <h2 class="career-title">Career Inspiration & Future Career Goals</h2>
+
+                    <p class="career-subtitle">Career Aspiration</p>
+                    <ul>
+                        <li>Become a competent software engineer and gain experience through real-world projects</li>
+                    </ul>
+
+                    <p class="career-subtitle">Vision</p>
+                    <ul>
+                        <li>Grow into a skilled and reliable software engineer who builds useful and impactful applications. Possibly work at a Big 4 company for experience and later start a software startup.</li>
+                    </ul>
+
+                    <p class="career-subtitle">What Drives Me</p>
+                    <ul>
+                        <li>A strong passion for coding and creating software that solves real problems.</li>
+                    </ul>
+
+                    <p class="career-subtitle">🎓 University Goals</p>
+                    <ul>
+                        <li>Join at least 3 hackathons during my university year to gain hands-on experience and improve my team collaboration skills.</li>
+                        <li>Work on personal projects during semester breaks to strengthen my coding skills and explore new technologies.</li>
+                    </ul>
+
+                    <p class="career-subtitle">My Future Plans</p>
+                    <ul>
+                        <li>Participate in hackathons during university years to gain more experience</li>
+                        <li>Secure an internship or job placement in a reputable tech company before graduation to gain industry experience.</li>
+                    </ul>
+
+                </section>
+            </main>
+            
+            <!--last and fourth grid child, footer-->
+            <footer class="footer"> 
+
+                <div class="footer-left">
+                    <small>&copy; 2025 Jaclyn Chiam Personal Portfolio</small>
+                </div>
+
+                <div class="footer-right">
+                    <a href="aboutme.html" class="footer-item"><small>about</small></a>
+                    <a href="personalProject.html" class="footer-item"><small>projects</small> </a>
+                    <a href="contact.html" class="footer-item"> <small>contact</small></a>
+                </div>
+            </footer>
+        </div>
+        <!--link to external js file-->
+        <script src="javascript/home.js"></script>
+
+    </body>
+
+</html>

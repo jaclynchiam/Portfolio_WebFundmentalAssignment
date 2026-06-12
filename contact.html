@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang  ="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Jaclyn Personal Portfolio - Contact Me </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--import gogle font style-->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+
+        <!--external css file-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/leftnav.css">
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+
+    <body>
+
+      <div class="gridbox"> 
+        <!--first grid child - top nav-->
+        <nav class="top-nav">
+            <div class="nav-left"> 
+                <a href="aboutme.html" class="aboutme" >About Me</a>
+            </div>
+
+            <div class="nav-right">
+              <a href="skills.html" class="navitem nav-link-skills">Skills</a>
+              <a href="personalProject.html" class="navitem nav-link-projects">Personal Projects</a>
+                <a href="contact.html" class="navitem nav-link-contact">Contact</a>
+                <a href="files/top_nav/Resume.pdf" target="_blank" class="navitem resume">
+                    <span class="resume-content">
+                      <img src="images/top_nav/resume.png" width="25" height="25" alt="Resume icon">
+                      Resume
+                    </span>
+                  </a>                         
+            </div>
+        </nav>
+            
+            <!--second grid child left - nav -->
+            <nav class="left-nav">
+              <button class="logo-button" onclick="location.href='homepage.html'">J</button>
+              <a class="ig-icon" href="https://www.instagram.com/chiamjaclyn/" target="_blank"><img src="images/left_nav/instagram.png" alt="instagram icon" width="35" height="35"></a>
+              <a class="linkedin" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><img src="images/left_nav/linkedin.png" alt="linkedin" width="35" height="35"></a>
+              <a class="whatsapp" href="https://web.whatsapp.com/" target="_blank"><img src="images/left_nav/whatsapp.png" alt="whatsapp" width="35" height="35"></a>
+              <a class="facebook" href="https://www.facebook.com/jiezu.chiam/" target="_blank"><img src="images/left_nav/facebook.png" alt="facebook" width="35" height="35"></a>
+              <a class="github" href="https://github.com/jaclynchiam" target="_blank"><img src="images/left_nav/github.png" alt="github" width="35" height="35"></a>
+              <a class="leetcode" href="https://leetcode.com/u/jaclynchiam/" target="_blank"><img src="images/left_nav/leetcode.png" alt="leetcode" width="35" height="35"></a>
+          </nav>
+          
+            
+
+              <!--header-->
+              <header class="header fade-in visible"> 
+                  <div class="title-box">
+                      <p> Contact Me </p>
+                  </div>
+                  <hr class="section-divider">
+                 </header>
+                
+            <!--thrid grid child - main content area-->
+            <main class="main">
+                <section class="contact-info-section fade-in">
+                    <div class="contact-info fade-in visible">
+                     <h2>Let's Connect</h2>
+                      <p>Get in touch with me via social media or send me an email.</p>
+                      <p>Email: <a href="mailto:chiamjiezu@gmail.com" style="color: #FDEE00;">chiamjiezu@gmail.com</a></p>
+                      <p>Phone Number: 016-442-9427</p>
+                      <p>Social Media:</p>
+                      <ul class="social-media-list">
+                        <li>
+                          <a href="https://www.facebook.com/jiezu.chiam/" target="_blank">
+                            <img src="images/left_nav/facebook.png" alt="Facebook" width="20" height="20"> Facebook
+                          </a>
+                        </li>
+                        <li>
+                          <a class="linkedln" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
+                            <img src="images/left_nav/linkedin.png" alt="LinkedIn" width="22" height="20">LinkedIn
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/chiamjaclyn/" target="_blank">
+                            <img src="images/left_nav/instagram.png" alt="Instagram" width="20" height="20"> Instagram
+                          </a>
+                        </li>
+                      </ul>
+
+                      <div class="connect-info fade-in visible">
+                        <p>If you’d like to connect for collaboration, freelance work, or just to chat about tech, feel free to reach out!</p>
+                        <dl>
+                            <dt style="color:#FDEE00;">Availability</dt>
+                            <dd>Open to student projects, coding collaborations, or internship opportunities.</dd>
+                          
+                            <dt style="color:#FDEE00;">Response time</dt>
+                            <dd>I usually reply within 1–2 days. Looking forward to hearing from you!</dd>
+                          </dl>
+                    </div>
+    
+                    </div>
+                </section>
+
+                <section class="contact-me-form fade-in visible">
+                    <h2 class="form-heading">Send me an Email : </h2>
+                    <form class="contact-form" onsubmit="handleForm(event)" >
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message..." required></textarea>
+                        <button type="submit">Send Message</button>
+                      </form>
+                </section>     
+            </main>
+            
+            <!--last and fourth grid child, footer-->
+            <footer class="footer"> 
+
+                <div class="footer-left">
+                  <small>&copy; 2025 Jaclyn Chiam Personal Portfolio</small>
+                </div>
+
+                <div class="footer-right">
+                    <a href="aboutme.html" class="footer-item"><small>about</small></a>
+                    <a href="personalProject.html" class="footer-item"><small>projects</small> </a>
+                    <a href="contact.html" class="footer-item"> <small>contact</small></a>
+                </div>
+            </footer>
+        </div>
+
+           <!--link to external js file-->
+           <script src="javascript/contact.js"></script>           
+           <script src="javascript/fadein.js"></script>
+
+
+    </body>
+
+</html>
