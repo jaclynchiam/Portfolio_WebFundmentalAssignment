@@ -89,11 +89,5 @@ This site isn't published yet, so for now you can run it locally:
 ---
 ## 📷 Preview
 
-![Homepage](images/readme/homepage.png)
-
-![About Me](images/readme/about.png)
-
-![Projects](images/readme/projects.png)
-
 ---
 © 2025 Jaclyn Chiam — Personal Portfolio
