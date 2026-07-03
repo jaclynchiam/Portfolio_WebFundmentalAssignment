@@ -1,6 +1,7 @@
 # Portfolio_WebFundmentalAssignment
 Designed and developed a personal portfolio website from scratch using HTML, CSS, JavaScript, and Figma as part of the Web Fundamentals course assignment in June 2025.
 
+<!--
 # 🌐 Jaclyn Chiam - Personal Portfolio Website
 
 This is my personal portfolio website, built as part of my Web Fundamentals assignment at Sunway University. It showcases who I am, my technical skills, and the personal/academic projects I've worked on so far as a first-year Computer Science student.
@@ -90,4 +91,5 @@ This site isn't published yet, so for now you can run it locally:
 ## 📷 Preview
 
 ---
-© 2025 Jaclyn Chiam — Personal Portfolio
+© 2025 Jaclyn Chiam — Personal Portfolio -->
+
